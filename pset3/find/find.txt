@@ -1,0 +1,5 @@
+
+haystack[0] = 
+
+Didn't find needle in haystack.
+
