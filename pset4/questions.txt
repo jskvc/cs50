@@ -1,0 +1,19 @@
+.  How many different colors does each format support? BMP - 16 millions, GIF - 256, JPEG - millions, PNG - 256
+.  Which of these formats supports animation? GIF
+.  What's the difference between lossy and lossless compression? Difference is in the compression of a file. With lossless compression, every single bit of data that was originally in the file remains after the file is uncompressed. Lossy compression reduces a file by permanently eliminating certain information.
+.  Which of these formats is lossy-compressed? JPG uses lossy compression.
+.  What happens, technically speaking, when a file is deleted on a FAT file system? The system modifies the filename's first character to signal that it has been deleted and that the directory entry can be recycled. The system moves all of the file's FAT clusters to the hard drive's listfree clusters.
+.  What can someone like you do to ensure (with high probability) that files you delete cannot be recovered? Write NUL bytes (or random characters) to every address on the disk.
+.  What’s stdint.h? The <stdint.h> header shall declare sets of integer types having specified widths, and shall define corresponding sets of macros. It shall also define macros that specify limits of integer types corresponding to types defined in other standard headers
+.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program? Commonly they are used for manipulations, especially on 32-bit registers
+. How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively? BYTE = 8 bit BYTE is an 8-bit unsigned value that corresponds to a single octet in a network protocol. DWORD = 32 bit DWORD is a 32-bit unsigned integer (range: 0 through 4294967295 decimal). LONG = 32 bit LONG is a 32-bit signed integer, in twos-complement format (range: –2147483648 through 2147483647 decimal).WORD = 16 bit WORD is a 16-bit unsigned integer (range: 0 through 65535 decimal).
+. What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? The first two bytes must be bfTyp that specifies type of file. (Hex:    0x424d, ASCII:  BM )
+. What’s the difference between bfSize and biSize? bfSize is the total number of bytes in the file. biSize is the number of bytes in the info header.
+. What does it mean if biHeight is negative? If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper left corner.
+. What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)? biBitCount specifies the number of bits per pixel (bpp).
+. Why might fopen return NULL in copy.c:37? Not enough disk space, no authoritation to creat file.
+. Why is the third argument to fread always 1 in our code? Because it specifies how many elements you want to read, and we're always reading a struct so we only need 1 struct.
+. What value does copy.c:70 assign padding if bi.biWidth is 3? 4
+. What does fseek do? Reposition stream position indicator.
+. What is SEEK_CUR? This is an integer constant which, when used as the whence argument to the fseek or fseeko function, specifies that the offset provided is relative to the current file position
+. Whodunit? A boy holding a toy. 
