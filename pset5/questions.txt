@@ -1,0 +1,23 @@
+1.  Pneumono­ultra­microscopic­silico­volcano­coniosis  is the longest word in the English language  that refers to a lung diseaGGse.
+2.  Getrusage() returns resource usage measures for who, which can be one of the following:
+
+        RUSAGE_SELF
+    Return resource usage statistics for the calling process, which is the sum of resources used by all threads in the process.
+        RUSAGE_CHILDREN
+    Return resource usage statistics for all children of the calling process that have terminated and been waited for. 
+    These statistics will include the resources used by grandchildren, and further removed descendants, if all of the 
+    intervening descendants waited on their terminated children.
+        RUSAGE_THREAD (since Linux 2.6.26)
+    Return resource usage statistics for the calling thread.
+3.  16
+4.  Passing in values involves copying the two 16 member struts which would take some time and memory. Since the purpose of 
+    getrusage() is to track the resources required (including time and RAM) this would lead to inaccuracies. 
+    Additionally, if a rusage struct has an undefined value it is autonatically set to zero. This negates any dereferencing 
+    crashes or extra checks.
+5.  Main is initialisation function of program.
+6.  The const type ensures that the initial value of the parameter cannot be modified.
+7.  First I used hash function to give hash values to word then I used hashtable to store hash values of dictionaty.
+8.  2.73 s
+9.  -
+10. The check time is slow.
+
